@@ -2,3 +2,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.bg-black {
+    background-color: #000;
+}
+/* NAVBAR */
+#logo {
+    width: 85px;
+}
