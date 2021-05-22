@@ -4,3 +4,7 @@
     overflow: auto;
     height: 380px;
 }
+/* Jumbotron */
+.font-size-maior {
+    font-size: 1.2em;
+}

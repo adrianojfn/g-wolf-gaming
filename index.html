@@ -94,12 +94,12 @@
             <div class="row">
                 <div class="col-12 text-center my-4">
                     <h1 class="display-3">Olá,</h1>
-                    <p>Seja bem vindo!</p>
+                    <p class="font-size-maior">Seja bem vindo!</p>
                 </div>
             </div>
             <!-- Scrollspy -->
             <div class="row mb-5">
-                <div class="col-3">
+                <div class="col-sm-6 col-md-4 mb-3">
                     <nav class="navbar navbar-light bg-light" id="navbarVertical">
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link" href="#item1">Sobre</a>
@@ -109,7 +109,7 @@
                         </nav>
                     </nav>
                 </div>
-                <div class="col-9">
+                <div class="col-sm-6 col-md-8">
                     <div class="scrollspySobre" data-spy="scroll" data-target="#navbarVertical" data-offset="0">
                         <h4 id="item1">Sobre</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi, excepturi sapiente quaerat molestiae incidunt quo suscipit voluptas, fugit tenetur reprehenderit voluptatum illum natus libero repudiandae quod molestias dicta? Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, in cupiditate pariatur tenetur natus sapiente magni doloremque harum eos quasi eveniet expedita cum soluta iure debitis voluptas suscipit blanditiis corrupti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, deleniti explicabo quos quaerat ut, aperiam accusamus quisquam alias porro natus vel rem debitis error sint maxime ad nam neque doloremque.</p>
@@ -126,6 +126,71 @@
                 </div>
             </div>
         </div>
+
+        <!-- Jumbotron apresentando o jogo (futuramente Death Wisdom) -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4">The Last of Us Part II</h1>
+                        <p class="lead">The Last of Us Part II é um jogo eletrônico de ação-aventura desenvolvido pela Naughty Dog e publicado pela Sony Interactive Entertainment. É o segundo jogo da franquia e foi lançado em 19 de junho de 2020 exclusivamente para PlayStation 4.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Botões para conteúdo sobre o jogo -->
+                        <ul class="nav nav-pills justify-content-center mb-4" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#trailer-game">Trailer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#about-game">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#forum-game">Fórum</a>
+                            </li>
+                        </ul>
+                        <!-- Conteúdo sobre o jogo (trailer, sobre e fórum) -->
+                        <div class="tab-content" id="nav-pills-content">
+                            <!-- Trailer (por enquanto genérico) -->
+                            <div class="tab-pane fade show active" id="trailer-game" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9 mb-4">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W2Wnvvj33Wo"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="font-size-maior text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis tempore illo beatae labore itaque deleniti, facilis modi temporibus eius ipsam corporis repellendus assumenda omnis qui natus dignissimos aut consequatur! Hic?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sobre -->
+                            <div class="tab-pane fade" id="about-game" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur distinctio, officiis dignissimos provident, quibusdam iure sequi, voluptates quae laboriosam rerum. Sed iure praesentium dignissimos magni nemo at cumque eum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fórum -->
+                            <div class="tab-pane fade" id="forum-game" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis nam maxime, delectus distinctio possimus deleniti quia ipsum, quaerat esse fugiat sapiente id provident officiis eveniet magni, sint veniam voluptatibus.</p>
+                                        <a href="./forum.html" class="btn btn-success text-light">Quero participar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
