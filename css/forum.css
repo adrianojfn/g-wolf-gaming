@@ -1,0 +1,10 @@
+/* FÓRUM - CONTEÚDO */
+.categoria {
+    background-color: #000;
+}
+.forum-col {
+    min-width: 308px;
+}
+.last-post-col {
+    min-width: 304px;
+}

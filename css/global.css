@@ -5,6 +5,9 @@ body {
 .bg-black {
     background-color: #000;
 }
+.font-size-maior {
+    font-size: 1.2em;
+}
 /* NAVBAR */
 #logo {
     width: 85px;
