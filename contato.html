@@ -53,7 +53,78 @@
     </header>
 
     <main>
-
+        <!-- Jumbotron para a sessão de contato -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>CONTATO</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <!-- Formulário de contato sobre assuntos específicos -->
+                    <div class="col-12 col-lg-8 col-xl-8 mb-5">
+                        <h4 class="text-center">Formulário de Contato</h4>
+                        <form action="">
+                            <div class="form-row mt-4 border pt-2">
+                                <div class="form-group col-sm-12">
+                                    <label for="inputNome">Nome:</label>
+                                    <input class="form-control" type="text" id="inputNome" required>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="inputNome">Email:</label>
+                                    <input class="form-control"  type="text" id="inputNome" required>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="inputNome">Telefone:</label>
+                                    <input class="form-control"  type="text" id="inputNome" required>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="inputNome">Assunto:</label>
+                                    <select class="form-control" id="">
+                                        <option value="">...</option>
+                                        <option value="">Sugestão</option>
+                                        <option value="">Reclamação</option>
+                                        <option value="">Trabalhe conosco</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="inputTextArea">Mensagem:</label>
+                                    <textarea class="form-control" id="inputTextArea" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary col-sm-12">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contatos gerais (endereço, número etc) -->
+                    <div class="col-12 col-lg-4 col-xl-4 text-center">
+                        <h4 class="mb-3">Atendimentos Gerais</h4>
+                        <div class="pt-3 text-muted">
+                            <p class="text-dark">G-Wolf Gaming</p>
+                            <hr>
+                            <p>Rua Guanabara Deschamps, 404</p>
+                            <p>Jardim Dev - Python | SP</p>
+                            <p>CEP: 04040-404</p>
+                            <hr>
+                            <p class="text-dark">Horário de atendimento</p>
+                            <p>Seg. à Sex. das 10h às 18h</p>
+                            <hr>
+                            <p class="text-dark">Contato pelo WhatsApp</p>
+                            <!-- Botão para ir direto a conversa com número específico -->
+                            <p><a class="text-success" href="https://web.whatsapp.com/send?phone=5511963524366" target="_blank"><i class="fab fa-whatsapp mr-2"></i>(11) 96352-4366</a></p>
+                            <hr>
+                            <p class="text-dark">E-mail de atendimento</p>
+                            <p>gwolfcontato@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- API Google Maps para mostrar o endereço da empresa -->
+                <div class="row mt-5">
+                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Etec%20Jardim%20%C3%82ngela&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Rodapé da página com links da navbar (para não precisar rodar até em cima novamente) e redes sociais -->
