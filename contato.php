@@ -1,3 +1,7 @@
+<?php
+// Inicia a sessão
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,7 +57,7 @@
 
     <main>
         <!-- Jumbotron para a sessão de contato -->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid pt-4">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -65,33 +69,42 @@
                     <!-- Formulário de contato sobre assuntos específicos -->
                     <div class="col-12 col-lg-8 col-xl-8 mb-5">
                         <h4 class="text-center">Formulário de Contato</h4>
-                        <form action="">
+                        <form action="./php/form_contato.php" method="POST" enctype="multipart/form-data">
                             <div class="form-row mt-4 border pt-2">
+                                <!-- Mensagem de sucesso ou erro para o formulário vindo direto do arquivo form_contato.php -->
+                                <?php
+                                    if (isset($_SESSION['msg'])) {
+                                    echo $_SESSION['msg'];
+                                    unset ($_SESSION['msg']);
+                                    }
+                                ?>
                                 <div class="form-group col-sm-12">
-                                    <label for="inputNome">Nome:</label>
-                                    <input class="form-control" type="text" id="inputNome" required>
+                                    <label for="nome">Nome:</label>
+                                    <input class="form-control" name="nome" type="text" id="nome" placeholder="Nome e Sobrenome" required>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <label for="inputNome">Email:</label>
-                                    <input class="form-control"  type="text" id="inputNome" required>
+                                    <label for="email">Email:</label>
+                                    <input class="form-control" name="email" type="email" id="email" placeholder="Seu melhor e-mail" required>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <label for="inputNome">Telefone:</label>
-                                    <input class="form-control"  type="text" id="inputNome" required>
+                                    <label for="telefone">Telefone:</label>
+                                    <input class="form-control" name="telefone" type="tel" id="telefone" placeholder="(11) 94751-2985" required>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <label for="inputNome">Assunto:</label>
-                                    <select class="form-control" id="">
-                                        <option value="">...</option>
-                                        <option value="">Sugestão</option>
-                                        <option value="">Reclamação</option>
-                                        <option value="">Trabalhe conosco</option>
+                                    <label for="assunto">Assunto:</label>
+                                    <select class="form-control" name="assunto" id="assunto">
+                                        <option value="...">...</option>
+                                        <option value="Sugestão">Sugestão</option>
+                                        <option value="Reclamação">Reclamação</option>
+                                        <option value="Trabalhe Conosco">Trabalhe Conosco</option>
+                                        <option value="Outros">Outros</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <label for="inputTextArea">Mensagem:</label>
-                                    <textarea class="form-control" id="inputTextArea" rows="3"></textarea>
+                                    <label for="mensagem">Mensagem:</label>
+                                    <textarea class="form-control" name="mensagem" id="mensagem" rows="3" maxlength="1000" placeholder="Sua mensagem com no máximo 1000 caracteres" required></textarea>
                                 </div>
+                                <!-- Botão para enviar os dados do formulário -->
                                 <button type="submit" class="btn btn-primary col-sm-12">Enviar</button>
                             </div>
                         </form>
@@ -99,9 +112,8 @@
                     <!-- Contatos gerais (endereço, número etc) -->
                     <div class="col-12 col-lg-4 col-xl-4 text-center">
                         <h4 class="mb-3">Atendimentos Gerais</h4>
-                        <div class="pt-3 text-muted">
+                        <div class="pt-4 text-muted">
                             <p class="text-dark">G-Wolf Gaming</p>
-                            <hr>
                             <p>Rua Guanabara Deschamps, 404</p>
                             <p>Jardim Dev - Python | SP</p>
                             <p>CEP: 04040-404</p>
@@ -138,8 +150,8 @@
                 <div class="col-sm-6 mb-4 text-center">
                     <h3>Menu</h3>
                     <div class="list-group">
-                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./index.html">Página Inicial</a>
-                        <a class="list-group-item list-group-item-action list-group-item-success" href="./forum.html">Fórum</a>
+                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./index.php">Página Inicial</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" href="./forum.php">Fórum</a>
                         <a class="list-group-item list-group-item-action list-group-item-primary" href="./avaliacoes.html">Avaliações</a>
                         <a class="list-group-item list-group-item-action list-group-item-success" href="./equipe.html">Equipe</a>
                     </div>
