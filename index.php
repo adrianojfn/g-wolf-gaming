@@ -1,3 +1,7 @@
+<?php
+// Inicia a sessão
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,7 +25,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid py-0">
-                <a class="navbar-brand text-white p-0" href="./index.html">
+                <a class="navbar-brand text-white p-0" href="./index.php">
                     <img id="logo" src="./assets/logo-sem-texto.png" alt="G-Wolf Gaming">
                     G-Wolf Gaming
                 </a>
@@ -32,10 +36,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Página Inicial</a>
+                            <a class="nav-link" href="./index.php">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./forum.html">Fórum</a>
+                            <a class="nav-link" href="./forum.php">Fórum</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./avaliacoes.html">Avaliações</a>
@@ -44,7 +48,7 @@
                             <a class="nav-link" href="./equipe.html">Equipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./contato.html">Contato</a>
+                            <a class="nav-link " href="./contato.php">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -61,19 +65,23 @@
                 <li data-target="#carouselSite" data-slide-to="3"></li>
             </ol>
 
-            <!-- Imagens (por enquanto genéricas, banners em construção) -->
+            <!-- Imagens -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid d-block" src="./assets/cloud9.jpg" alt="Cloud9">
+                    <img class="img-fluid d-block" src="./assets/banner-dw-1.png" alt="Death Wisdom">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid d-block" src="./assets/xbox-series-x.jpg" alt="Xbox Series X">
+                    <img class="img-fluid d-block" src="./assets/banner-dw-2.png" alt="Bosses Death Wisdom">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid d-block" src="./assets/tlou2.jpg" alt="The Last of Us Part: II">
+                    <img class="img-fluid d-block" src="./assets/banner-dw-3.png" alt="Demo Disponível">
+                    <!-- Legenda imagem com link para download do jogo -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid d-block" src="./assets/valorant.jpg" alt="Valorant">
+                    <img class="img-fluid d-block" src="./assets/banner-dw-4.png" alt="Link Fórum">
                 </div>
             </div>
             <!-- Controle de imagem -->
@@ -112,16 +120,16 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="scrollspySobre" data-spy="scroll" data-target="#navbarVertical" data-offset="0">
                         <h4 id="item1">Sobre</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit animi, excepturi sapiente quaerat molestiae incidunt quo suscipit voluptas, fugit tenetur reprehenderit voluptatum illum natus libero repudiandae quod molestias dicta? Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, in cupiditate pariatur tenetur natus sapiente magni doloremque harum eos quasi eveniet expedita cum soluta iure debitis voluptas suscipit blanditiis corrupti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, deleniti explicabo quos quaerat ut, aperiam accusamus quisquam alias porro natus vel rem debitis error sint maxime ad nam neque doloremque.</p>
+                        <p>A G-Wolf Gaming é uma empresa de desenvolvimento de jogos e sites fundada em 2020 por um trio de amigos, a princípio com o objetivo de trazer as notícias mais recentes relacionadas ao mundo dos jogos, buscávamos criar uma plataforma de disseminação de notícias com transparência e imparcialidade, porém, conforme o tempo passou a paixão pelos jogos que já era eloquente aumentou, com isso veio a gana de desenvolver seus próprios games. O primeiro projeto da empresa veio em conjunto ao seu novo site, abandono de um antigo membro e adição de mais 3 membros na equipe, assim sendo um time de 5. Death Wisdom era o nome, um game plataforma 2D, feito 100% pela equipe de 5 desenvolvedores, utilizando a plataforma GameMaker Studio 2 em sua programação.</p>
                         
                         <h4 id="item2">Missão</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel cumque ducimus quam illo magnam est officiis cupiditate. Dolor, inventore dolorem? Asperiores quasi impedit fuga reiciendis ab repellendus ipsam voluptate numquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis quidem exercitationem quis alias quod ab ad culpa ipsam mollitia, omnis eaque, officia nobis. Dolor iste suscipit eum id quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit facere fuga vero inventore fugit minus. Eaque autem, nemo minus asperiores adipisci quae! Animi fuga totam aliquam facilis perspiciatis ex.</p>
+                        <p>Nós da G-Wolf Gaming somos apaixonados por tecnologia e jogos eletrônicos. Desde sempre ficamos deslumbrados com a ideia de poder vivenciar e explorar outros mundos, novas histórias, narrativas e até mesmo termos a oportunidade de sermos heróis do passado, presente e de futuros distantes. A transmissão de sentimentos através dos jogos é indescritível e é algo que nos estimula cada vez mais a trabalhar, continuar criando e trazendo emoções aos nossos jogadores.</p>
                         
                         <h4 id="item3">Visão</h4>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eum recusandae ut consequatur eveniet rem fugit corporis obcaecati, sed consectetur, eius nostrum laudantium pariatur. Illum ipsa voluptas odit beatae dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed accusamus earum quaerat excepturi. Eos enim accusantium natus voluptatum! Magni odio cum, maxime eius impedit minus maiores voluptatibus id voluptas assumenda! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum nam minima officiis debitis voluptatibus vitae incidunt! Explicabo, laudantium doloremque commodi sed fugiat, saepe, tempore nesciunt sequi porro repellendus veniam quo?</p>
+                        <p>O nosso principal objetivo é de agregar e ajudar a expandir o mercado de jogos no Brasil. Temos muito amor a comunidade dos jogos e a comunidade de desenvolvedores independentes em nosso país, embora seja uma das áreas que mais crescem no Brasil hoje, os desenvolvedores juntamente com as suas obras raramente recebem a atenção e apoios merecidos em seus projetos. Queremos mudar isso e estamos trabalhando duro com nossos colaboradores para atingir esse objetivo ambicioso.</p>
 
                         <h4 id="item4">Valores</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nulla! A optio nostrum omnis debitis minima, quia dolor culpa dicta, corporis quibusdam repellat ratione sequi dignissimos sunt incidunt, nesciunt doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officiis totam fuga corrupti ex autem, quis neque voluptatem repudiandae cupiditate quidem. Quia repellat nam placeat, qui repellendus at similique? Perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nihil rerum dolorem id ab ea? Corrupti obcaecati molestiae labore, illo, accusamus temporibus, sapiente voluptatum nobis eveniet pariatur atque optio. Quibusdam?</p>
+                        <p>Devemos ter responsabilidade e disposição com nosso trabalho, esses dois ingredientes são indispensáveis no nosso processo criativo até o desenvolvimento das obras de nossa empresa, juntamente com o pensamento de inovação, devemos criar universos únicos, histórias envolventes e desafios que intriguem a todos que apertem o botão de “Novo Jogo”.</p>
                     </div>
                 </div>
             </div>
@@ -132,8 +140,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h1 class="display-4">The Last of Us Part II</h1>
-                        <p class="lead">The Last of Us Part II é um jogo eletrônico de ação-aventura desenvolvido pela Naughty Dog e publicado pela Sony Interactive Entertainment. É o segundo jogo da franquia e foi lançado em 19 de junho de 2020 exclusivamente para PlayStation 4.</p>
+                        <h1 class="display-4">Death Wisdom</h1>
+                        <p class="lead">Death Wisdom é um jogo eletrônico 2D de ação-suspense desenvolvido pela G-Wolf Gaming. É o primeiro jogo da empresa e foi lançado em 15 de junho de 2021 exclusivamente para Windows.</p>
                         <hr>
                     </div>
                 </div>
@@ -167,11 +175,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Sobre -->
+                            <!-- Sobre + call to action para o download do game -->
                             <div class="tab-pane fade" id="about-game" role="tabpanel">
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur distinctio, officiis dignissimos provident, quibusdam iure sequi, voluptates quae laboriosam rerum. Sed iure praesentium dignissimos magni nemo at cumque eum?</p>
+                                        <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +189,7 @@
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis nam maxime, delectus distinctio possimus deleniti quia ipsum, quaerat esse fugiat sapiente id provident officiis eveniet magni, sint veniam voluptatibus.</p>
-                                        <a href="./forum.html" class="btn btn-success text-light">Quero participar</a>
+                                        <a href="./forum.php" class="btn btn-outline-info ">Quero participar</a>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +199,7 @@
             </div>
         </div>
         <!-- E-mail marketing através de notícias sobre o desenvolvimento dos jogos -->
-        <div class="container">
+        <div class="container" id="email-mkt">
             <div class="row">
                 <div class="col-12 text-center mb-4">
                     <h1 class="display-4">Atenção!</h1>
@@ -200,20 +209,28 @@
             <!-- Form recebendo nome e e-mail do usuário -->
             <div class="row justify-content-center mb-5">
                 <div class="col-sm-12 col-md-10 col-lg-8">
-                    <form action="">
+                    <form action="./php/form_email_mkt.php" method="POST" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <label for="inputName">Nome</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Digite aqui">
+                                <input type="text" class="form-control" name="nome" id="inputName" placeholder="Digite aqui">
                             </div>
 
                             <div class="form-group col-sm-6">
                                 <label for="inputEmail">E-mail</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Digite aqui">
+                                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Digite aqui">
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary col-sm-12" data-toggle="modal" data-target="#modalEmailMkt">Enviar</button>
+                        <button type="submit" class="btn btn-primary col-sm-12">Enviar</button>
+
+                        <!-- Mensagem de sucesso ou erro para o formulário vindo direto do arquivo form_email_mkt.php --> 
+                        <?php
+                            if (isset($_SESSION['msg'])) {
+                            echo $_SESSION['msg'];
+                            unset ($_SESSION['msg']);
+                            }
+                        ?>
                     </form>
                 </div>
             </div>
@@ -232,10 +249,10 @@
                 <div class="col-sm-6 mb-4 text-center">
                     <h3>Menu</h3>
                     <div class="list-group">
-                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./forum.html">Fórum</a>
+                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./forum.php">Fórum</a>
                         <a class="list-group-item list-group-item-action list-group-item-success" href="./avaliacoes.html">Avaliações</a>
                         <a class="list-group-item list-group-item-action list-group-item-primary" href="./equipe.html">Equipe</a>
-                        <a class="list-group-item list-group-item-action list-group-item-success" href="./contato.html">Contato</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" href="./contato.php">Contato</a>
                     </div>
                 </div>
 
@@ -255,31 +272,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Modal para conclusão do e-mail marketing -->
-    <div class="modal fade" id="modalEmailMkt" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Boa!</h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Fique atento ao seu e-mail (nome pego do form)!</h5>
-                                <p class="font-size-maior text-success">A partir de agora você receberá notícias e atualizações de Death Wisdom antecipadamente em seu e-mail :)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
