@@ -24,7 +24,7 @@ session_start();
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid py-0">
-                <a class="navbar-brand text-white p-0" href="./index.html">
+                <a class="navbar-brand text-white p-0" href="./index.php">
                     <img id="logo" src="./assets/logo-sem-texto.png" alt="G-Wolf Gaming">
                     G-Wolf Gaming
                 </a>
@@ -35,10 +35,10 @@ session_start();
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Página Inicial</a>
+                            <a class="nav-link" href="./index.php">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./forum.html">Fórum</a>
+                            <a class="nav-link" href="./preforum.php">Fórum</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./avaliacoes.html">Avaliações</a>
@@ -47,7 +47,7 @@ session_start();
                             <a class="nav-link" href="./equipe.html">Equipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./contato.html">Contato</a>
+                            <a class="nav-link " href="./contato.php">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -69,9 +69,9 @@ session_start();
                     <!-- Formulário de contato sobre assuntos específicos -->
                     <div class="col-12 col-lg-8 col-xl-8 mb-5">
                         <h4 class="text-center">Formulário de Contato</h4>
-                        <form action="./php/form_contato.php" method="POST" enctype="multipart/form-data">
+                        <form action="./php/form_contato" method="POST" enctype="multipart/form-data">
                             <div class="form-row mt-4 border pt-2">
-                                <!-- Mensagem de sucesso ou erro para o formulário vindo direto do arquivo form_contato.php -->
+                                <!-- Mensagem de sucesso/erro para o contato -->
                                 <?php
                                     if (isset($_SESSION['msg'])) {
                                     echo $_SESSION['msg'];
@@ -138,7 +138,7 @@ session_start();
         </div>
     </main>
 
-    <!-- Rodapé da página com links da navbar (para não precisar rodar até em cima novamente) e redes sociais -->
+    <!-- Rodapé da página com links da navbar (para não precisar rodar até em cima) e redes sociais -->
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -151,7 +151,7 @@ session_start();
                     <h3>Menu</h3>
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action list-group-item-primary" href="./index.php">Página Inicial</a>
-                        <a class="list-group-item list-group-item-action list-group-item-success" href="./forum.php">Fórum</a>
+                        <a class="list-group-item list-group-item-action list-group-item-success" href="./preforum.php">Fórum</a>
                         <a class="list-group-item list-group-item-action list-group-item-primary" href="./avaliacoes.html">Avaliações</a>
                         <a class="list-group-item list-group-item-action list-group-item-success" href="./equipe.html">Equipe</a>
                     </div>

@@ -15,7 +15,7 @@ session_start();
     <script src="https://kit.fontawesome.com/25c0615b0a.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Título da página -->
     <title>G-Wolf Gaming</title>
 </head>
@@ -39,7 +39,7 @@ session_start();
                             <a class="nav-link" href="./index.php">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./forum.php">Fórum</a>
+                            <a class="nav-link" href="./preforum.php">Fórum</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./avaliacoes.html">Avaliações</a>
@@ -54,7 +54,6 @@ session_start();
                 </div>
             </div>
         </nav>
-
         <!-- Carousel -->
         <div class="carousel slide" id="carouselSite" data-ride="carousel">
             <!-- Indicadores de imagem -->
@@ -64,7 +63,6 @@ session_start();
                 <li data-target="#carouselSite" data-slide-to="2"></li>
                 <li data-target="#carouselSite" data-slide-to="3"></li>
             </ol>
-
             <!-- Imagens -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -75,7 +73,6 @@ session_start();
                 </div>
                 <div class="carousel-item">
                     <img class="img-fluid d-block" src="./assets/banner-dw-3.png" alt="Demo Disponível">
-                    <!-- Legenda imagem com link para download do jogo -->
                     <div class="carousel-caption d-none d-md-block">
                         <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
                     </div>
@@ -135,13 +132,13 @@ session_start();
             </div>
         </div>
 
-        <!-- Jumbotron apresentando o jogo (futuramente Death Wisdom) -->
+        <!-- Jumbotron apresentando Death Wisdom -->
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h1 class="display-4">Death Wisdom</h1>
-                        <p class="lead">Death Wisdom é um jogo eletrônico 2D de ação-suspense desenvolvido pela G-Wolf Gaming. É o primeiro jogo da empresa e foi lançado em 15 de junho de 2021 exclusivamente para Windows.</p>
+                        <p class="lead">Death Wisdom é um jogo eletrônico 2D de ação-suspense desenvolvido pela G-Wolf Gaming. É o primeiro jogo da empresa e sua Demo foi lançada em 15 de junho de 2021 para Windows e Linux.</p>
                         <hr>
                     </div>
                 </div>
@@ -189,7 +186,7 @@ session_start();
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis nam maxime, delectus distinctio possimus deleniti quia ipsum, quaerat esse fugiat sapiente id provident officiis eveniet magni, sint veniam voluptatibus.</p>
-                                        <a href="./forum.php" class="btn btn-outline-info ">Quero participar</a>
+                                        <a href="./preforum.php" class="btn btn-outline-info ">Quero participar</a>
                                     </div>
                                 </div>
                             </div>
@@ -209,22 +206,20 @@ session_start();
             <!-- Form recebendo nome e e-mail do usuário -->
             <div class="row justify-content-center mb-5">
                 <div class="col-sm-12 col-md-10 col-lg-8">
-                    <form action="./php/form_email_mkt.php" method="POST" enctype="multipart/form-data">
+                    <form action="./php/form_email_mkt" method="POST" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <label for="inputName">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="inputName" placeholder="Digite aqui">
+                                <input type="text" class="form-control" name="nome" id="inputName" placeholder="Digite aqui" required>
                             </div>
 
                             <div class="form-group col-sm-6">
                                 <label for="inputEmail">E-mail</label>
-                                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Digite aqui">
+                                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Digite aqui" required>
                             </div>
                         </div>
-
                         <button type="submit" class="btn btn-primary col-sm-12">Enviar</button>
-
-                        <!-- Mensagem de sucesso ou erro para o formulário vindo direto do arquivo form_email_mkt.php --> 
+                        <!-- Mensagem de sucesso/erro para o formulário -->
                         <?php
                             if (isset($_SESSION['msg'])) {
                             echo $_SESSION['msg'];
@@ -237,11 +232,11 @@ session_start();
         </div>
     </main>
 
-    <!-- Rodapé da página com links da navbar (para não precisar rodar até em cima novamente) e redes sociais -->
+    <!-- Rodapé da página com links da navbar (para não precisar rodar até em cima) e redes sociais -->
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <!-- Linha para dividir o rodapé do e-mail marketing -->
+                <!-- Linha para dividir o rodapé do restante do conteúdo -->
                 <div class="col-12 mb-3">
                     <hr>
                 </div>
@@ -249,7 +244,7 @@ session_start();
                 <div class="col-sm-6 mb-4 text-center">
                     <h3>Menu</h3>
                     <div class="list-group">
-                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./forum.php">Fórum</a>
+                        <a class="list-group-item list-group-item-action list-group-item-primary" href="./preforum.php">Fórum</a>
                         <a class="list-group-item list-group-item-action list-group-item-success" href="./avaliacoes.html">Avaliações</a>
                         <a class="list-group-item list-group-item-action list-group-item-primary" href="./equipe.html">Equipe</a>
                         <a class="list-group-item list-group-item-action list-group-item-success" href="./contato.php">Contato</a>

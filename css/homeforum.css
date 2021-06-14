@@ -1,0 +1,19 @@
+/* FÓRUM */
+.categoria {
+    background-color: #000;
+}
+.topics-col {
+    min-width: 373px;
+}
+.lastpost-col {
+    min-width: 328px;
+}
+.autor-col {
+    min-width: 220px;
+}
+.msg-col {
+    min-width: 402px;
+}
+.date-col {
+    min-width: 200px;
+}
