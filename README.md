@@ -21,9 +21,26 @@
 ---
 
 <h1 align="center">
-    <img alt="Print Página Inicial" title="Readme" src="/assets/github/home-desktop.png" width="500px"/>
+    <img alt="Print Página Inicial" title="README" src="/assets/github/home-desktop.png" width="600px"/>
+    <img alt="GIF Página Inicial Mobile" title="README" src="/assets/github/home-mobile.gif"/>
 </h1>
 
 <h1 align="center">
-    <img alt="GIF Login Fórum" title="Readme" src="/assets/github/login-forum.gif"/>
+    <img alt="GIF Login Fórum" title="README" src="/assets/github/login-forum.gif"/>
 </h1>
+
+---
+
+# Sobre
+<p>ETEC: Jardim Ângela | Projeto TCC</p>
+<p>Desenvolvido com intuito de hospedar e apresentar o nosso jogo: <b>Death Wisdom</b>. Site 100% responsivo. E-mail marketing para o desenvolvimento dos jogos. Fórum para interação entre a comunidade de nossos jogadores.</p>
+
+---
+
+# Tecnologias
+- Linguagens: HTML5, PHP e JavaScript
+- Framework: Bootstrap
+- Estilização: CSS3
+- SGBD: MySQL
+- Versionamento de código: Git e GitHub
+- Ferramentas de desenvolvimento: VSCode, HeidiSQL, phpMyAdmin, WampServer
