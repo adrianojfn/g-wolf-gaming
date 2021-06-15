@@ -15,13 +15,13 @@
 ---
 
 <h4 align="center">
-    🚧  Projeto em construção...  🚧
+    🚧  Projeto em desenvolvimento...  🚧
 </h4>
 
 ---
 
 <h1 align="center">
-    <img alt="Print Página Inicial" title="README" src="/assets/github/home-desktop.png" width="600px"/>
+    <img alt="Print Página Inicial" title="README" src="/assets/github/home-desktop.png" width="500px"/>
     <img alt="GIF Página Inicial Mobile" title="README" src="/assets/github/home-mobile.gif"/>
 </h1>
 
@@ -44,3 +44,8 @@
 - SGBD: MySQL
 - Versionamento de código: Git e GitHub
 - Ferramentas de desenvolvimento: VSCode, HeidiSQL, phpMyAdmin, WampServer
+
+---
+
+# Autor
+Feito com 💚 por Adriano França ✔️ [Visite meu LinkedIn](https://www.linkedin.com/in/adrianojfn/)

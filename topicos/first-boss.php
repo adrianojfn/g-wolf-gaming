@@ -1,6 +1,7 @@
 <?php
-// Inicia a sessão e recebe a URL atual em uma variável
-session_start();
+// Verificação para o usuário não acessar o fórum pela URL
+include_once('../php/verificaLoginTopicos.php');
+// Recebe a URL atual em uma variável
 $_SESSION['url_pag'] = $_SERVER['REQUEST_URI'];
 // Conecta com o banco de dados
 include_once("../php/conexao.php");

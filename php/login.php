@@ -18,6 +18,7 @@ if ((isset($_POST['email'])) && (isset($_POST['senha']))) {
         header("Location: ../preforum.php#login");
     // Verifica se o resultado existe e salva algumas variáveis globais
     } elseif (isset($resultado)) {
+        $_SESSION['logado'] = true;
         $_SESSION['usuarioID'] = $resultado['id_usuario'];
         $_SESSION['usuarioNome'] = $resultado['nome_usuario'];
         $_SESSION['usuarioEmail'] = $resultado['email_usuario'];

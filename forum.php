@@ -1,6 +1,6 @@
 <?php
-// Inicia a sessão
-session_start();
+// Verificação para o usuário não acessar o fórum pela URL
+include_once('./php/verificaLogin.php');
 // Inclui a página de contagem para as estatísticas
 include_once("./php/contagem.php");
 ?>

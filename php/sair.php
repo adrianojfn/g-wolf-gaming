@@ -4,6 +4,7 @@ session_start();
 
 // Destrói todas as variáveis globais atuais
 unset(
+    $_SESSION['logado'],
     $_SESSION['usuarioID'],
     $_SESSION['usuarioNome'],
     $_SESSION['usuarioEmail'],
