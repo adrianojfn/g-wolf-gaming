@@ -355,7 +355,7 @@ include_once("./php/contagem.php");
                             <!-- Perfil do usuário com dados cadastrados -->
                             <div class="col-12 col-sm-6 col-lg-12 col-xl-12">
                                 <div class="card mb-3 mb-sm-3 mb-xl-3">
-                                    <img src="./assets/privateinvestocat.jpg" class="card-img-top"> <!-- Pegar do Banco de Dados -->
+                                    <img src="./upload/<?php echo $_SESSION['usuarioImgPerfil']; ?>" class="card-img-top">
                                     <div class="card-body">
                                         <h4 class="card-title"><b><?php echo $_SESSION['usuarioNome']; ?></b></h4>
                                         <h6 class="card-subtitle mb-2 text-muted"><?php echo $_SESSION['usuarioEmail']; ?></h5>

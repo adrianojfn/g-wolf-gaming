@@ -24,6 +24,7 @@ if ((isset($_POST['email'])) && (isset($_POST['senha']))) {
         $_SESSION['usuarioEmail'] = $resultado['email_usuario'];
         $_SESSION['usuarioDtNasc'] = $resultado['dt_nascimento_usuario'];
         $_SESSION['usuarioSenha'] = $resultado['senha_usuario'];
+        $_SESSION['usuarioImgPerfil'] = $resultado['imagem_usuario'];
         header("Location: ../forum.php");
     } else {
         $_SESSION['loginErro'] = "<div class='alert alert-danger text-center' role='alert'>Usuário ou senha inválido. Tente novamente!</div>";

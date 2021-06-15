@@ -21,7 +21,7 @@
 ---
 
 <h1 align="center">
-    <img alt="Print Página Inicial" title="README" src="/assets/github/home-desktop.png" width="500px"/>
+    <img alt="Print Página Inicial" title="README" src="/assets/github/home-desktop.png" width="700px"/>
     <img alt="GIF Página Inicial Mobile" title="README" src="/assets/github/home-mobile.gif"/>
 </h1>
 
@@ -38,7 +38,7 @@
 ---
 
 # Tecnologias
-- Linguagens: HTML5, PHP e JavaScript
+- Linguagens: PHP, HTML5 e JavaScript
 - Framework: Bootstrap
 - Estilização: CSS3
 - SGBD: MySQL

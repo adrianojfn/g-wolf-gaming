@@ -176,7 +176,7 @@ session_start();
                             <div class="tab-pane fade" id="about-game" role="tabpanel">
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
-                                        <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur distinctio, officiis dignissimos provident, quibusdam iure sequi, voluptates quae laboriosam rerum. Sed iure praesentium dignissimos magni nemo at cumque eum?</p>
+                                        <p class="font-size-maior">Jogo voltado ao retrô e com aspectos de um topdown, nele o jogador é introduzido a um universo apocalíptico, perdido e sem saber onde ou porque está ali, ele explora o ambiente procurando uma saída, ao decorrer da gameplay se encontra com diversos inimigos e chefões a serem combatidos.</p>
                                         <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@ session_start();
                             <div class="tab-pane fade" id="forum-game" role="tabpanel">
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
-                                        <p class="font-size-maior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis nam maxime, delectus distinctio possimus deleniti quia ipsum, quaerat esse fugiat sapiente id provident officiis eveniet magni, sint veniam voluptatibus.</p>
+                                        <p class="font-size-maior">Quem nunca teve uma jogatina entusiasmante e não tinha com quem interagir a respeito do jogo depois? Falar sobre os chefões,  easter eggs e dar sugestões no desenvolvimento é possível neste Fórum. Entre na nossa própria comunidade de Death Wisdom.</p>
                                         <a href="./preforum.php" class="btn btn-outline-info ">Quero participar</a>
                                     </div>
                                 </div>

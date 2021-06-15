@@ -118,8 +118,11 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
                             ?>
                             <tr>
                                 <td>
-                                    <div class="text-center">
-                                        <b><?php echo $row_msg['autor_msg']; ?></b>
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <b><?php echo $row_msg['autor_msg']; ?></b>
+                                        </div>
+                                        <img class="card-img-bottom" src="../upload/<?php echo $row_msg['img_autor_msg']; ?>" alt="Imagem Autor">
                                     </div>
                                 </td>
                                 <td>
@@ -184,7 +187,7 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
                             <!-- Perfil do usuário com dados cadastrados -->
                             <div class="col-12 col-sm-6 col-lg-12 col-xl-12">
                                 <div class="card mb-3 mb-sm-3 mb-xl-3">
-                                    <img src="../assets/privateinvestocat.jpg" class="card-img-top"> <!-- Pegar do Banco de Dados -->
+                                    <img src="../upload/<?php echo $_SESSION['usuarioImgPerfil']; ?>" class="card-img-top">
                                     <div class="card-body">
                                         <h4 class="card-title"><b><?php echo $_SESSION['usuarioNome']; ?></b></h4>
                                         <h6 class="card-subtitle mb-2 text-muted"><?php echo $_SESSION['usuarioEmail']; ?></h5>
