@@ -14,9 +14,7 @@
 
 ---
 
-<h4 align="center">
-    🚧  Projeto em desenvolvimento...  🚧
-</h4>
+[Clique aqui para acessar o site](https://gwolfgaming.tech)
 
 ---
 
