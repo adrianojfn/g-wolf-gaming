@@ -26,7 +26,15 @@ CREATE TABLE IF NOT EXISTS `email_marketing` (
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `email_marketing`
+--
+
+INSERT INTO `email_marketing` (`id`, `nome`, `email`) VALUES
+(11, 'MacKenzie Pickett', 'qucinor@mailinator.com'),
+(10, 'Emanoel Silva', 'emanoelsilva@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -60,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `mensagens_topico` (
   `data_msg` datetime NOT NULL,
   `topico_msg` varchar(255) NOT NULL,
   PRIMARY KEY (`id_msg`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `mensagens_topico`
@@ -79,7 +87,19 @@ INSERT INTO `mensagens_topico` (`id_msg`, `conteudo_msg`, `autor_msg`, `img_auto
 (10, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus illum minus vitae natus autem dolorum enim laudantium ab at laboriosam tempore a nulla consequuntur, rerum labore iusto voluptates voluptatem quis distinctio libero dolores. Cupiditate quod adipisci odio iste! Ex recusandae nesciunt, porro animi excepturi perferendis provident a, rem, autem voluptatum vero amet. Autem magni ullam repellat. Labore nisi deleniti cupiditate sequi. Iusto fugit, expedita totam vero quos optio, fugiat eos, modi qui illo rerum! Quibusdam officia dicta aperiam rem nisi impedit quo debitis aut eos est temporibus, commodi ab id nostrum eaque, fugit tempora distinctio consectetur culpa accusantium. Harum.', 'TenZ', 'ec4dd5952c1f68e4520299bd522c96a3.jpeg', '2021-06-15 12:44:50', 'Segundo Boss'),
 (11, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maxime dolorem ea similique. Eius repellat ratione, temporibus ducimus impedit nesciunt molestias suscipit explicabo porro recusandae. Officiis recusandae sed voluptate. Praesentium, explicabo molestias distinctio eius inventore odit tempora non minus ipsam recusandae vitae dolorum fugit, nisi placeat! Debitis nostrum ea, dolorum quas facere facilis corporis, molestias, illo ullam similique enim placeat quasi error? Exercitationem quis ratione soluta. Tempora quasi vitae accusantium! Aspernatur magnam libero in, voluptatem eveniet, cumque cupiditate accusamus repellat aperiam voluptatum adipisci dolores deserunt fugit at, a laborum alias dicta blanditiis consequatur accusantium. Fugit commodi praesentium nesciunt eligendi laboriosam!', 'TenZ', 'ec4dd5952c1f68e4520299bd522c96a3.jpeg', '2021-06-15 12:45:16', 'Armamento'),
 (12, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eum numquam quia fugiat aliquam placeat odit voluptatum maxime sit error cumque possimus sint est sequi, delectus porro quis cum repellat dignissimos consequatur, minima minus odio blanditiis. Beatae rem placeat exercitationem quae quod natus expedita iure odio veniam reprehenderit ducimus nulla sequi commodi sed consequatur a at vitae praesentium voluptatum, quisquam eos ab! Corporis accusantium saepe neque asperiores maiores incidunt, harum libero delectus quos praesentium nihil ad, mollitia voluptatum. Sint architecto inventore, ipsum accusamus nihil molestias. Similique, asperiores. Nesciunt a qui, cupiditate saepe reiciendis, sed beatae, quisquam delectus impedit laudantium obcaecati?', 'FNX', '36dbdc35d5b8cd60868902d5d2154f0b.jpg', '2021-06-15 12:45:39', 'Segundo Boss'),
-(13, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta inventore repellat voluptates ipsam! Id, pariatur. Qui repellat, ratione quis perspiciatis fugit id aperiam veritatis repudiandae aut quidem. Quidem aliquid maxime voluptatum rem. Odio, repellat itaque sunt minima consequuntur, ullam laborum excepturi optio nostrum consequatur commodi veniam tenetur. Delectus perferendis voluptate inventore vero corrupti esse ratione. Molestiae, aperiam? Ab dolorum recusandae veritatis! Odio rem quae suscipit ipsa a minima nihil sed hic repudiandae sunt! Quia pariatur maiores alias et libero quos necessitatibus magni minus laboriosam, accusantium rerum sunt! Commodi accusamus iste cumque explicabo, quas quibusdam molestiae iusto quia! Pariatur, explicabo.', 'Scream', 'e7e30c19e2fa161384329e6ce6996b0f.jpg', '2021-06-15 12:46:01', 'Armamento');
+(13, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta inventore repellat voluptates ipsam! Id, pariatur. Qui repellat, ratione quis perspiciatis fugit id aperiam veritatis repudiandae aut quidem. Quidem aliquid maxime voluptatum rem. Odio, repellat itaque sunt minima consequuntur, ullam laborum excepturi optio nostrum consequatur commodi veniam tenetur. Delectus perferendis voluptate inventore vero corrupti esse ratione. Molestiae, aperiam? Ab dolorum recusandae veritatis! Odio rem quae suscipit ipsa a minima nihil sed hic repudiandae sunt! Quia pariatur maiores alias et libero quos necessitatibus magni minus laboriosam, accusantium rerum sunt! Commodi accusamus iste cumque explicabo, quas quibusdam molestiae iusto quia! Pariatur, explicabo.', 'Scream', 'e7e30c19e2fa161384329e6ce6996b0f.jpg', '2021-06-15 12:46:01', 'Armamento'),
+(14, 'Muito difícil!', 'Emanoel Silva', 'a30843b5c709a4325103374c8856cc70.jpg', '2021-06-15 20:32:21', 'Primeiro Boss'),
+(15, 'Discordo de você Emanoel! Afinal, o boss extra é muito mais difícil, seu bobalhão!', 'G-Wolf Gaming', 'e65ce8c3e428ef0bb6f9f2cb8fb6cfe8.png', '2021-06-15 20:34:02', 'Primeiro Boss'),
+(16, 'Nossa, mas eu acredito que o Emanoel está certissímo, achei mais difícil que CS este boss!', 'FNX', '36dbdc35d5b8cd60868902d5d2154f0b.jpg', '2021-06-15 20:34:53', 'Primeiro Boss'),
+(17, 'Nossa TenZ, falou tudo', 'Emanoel Silva', 'a30843b5c709a4325103374c8856cc70.jpg', '2021-06-15 20:46:29', 'Munição Dourada'),
+(18, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut nisl cursus, porta nunc et, condimentum leo. Curabitur nunc risus, volutpat nec velit ac, porttitor dapibus libero. Maecenas eu scelerisque nisi. Sed interdum dui sem, eget commodo enim placerat at. Mauris cursus purus eu est aliquam tempor. Nunc sagittis neque lectus, mollis convallis tellus bibendum in. Aliquam quis orci purus. Praesent viverra turpis turpis, at consequat arcu ullamcorper vitae.', 'Emanoel Silva', 'a30843b5c709a4325103374c8856cc70.jpg', '2021-06-15 20:47:03', 'Segundo Boss'),
+(19, 'Muito flacido...', 'É flacido', '845704a0208c1af315d57b71e8ded8b3.jpg', '2021-06-15 20:52:47', 'Terceiro Boss'),
+(20, 'Testando', 'G-Wolf Gaming', 'e65ce8c3e428ef0bb6f9f2cb8fb6cfe8.png', '2021-06-15 21:23:28', 'Primeiro Boss'),
+(21, 'Eu sou o TenZ', 'TenZ', 'ec4dd5952c1f68e4520299bd522c96a3.jpeg', '2021-06-16 01:02:04', 'Gerais'),
+(22, 'Vitae porro aperiam adipisci dolorem cupidatat quas doloribus dolorum eum consequuntur amet maiores', 'TenZ', 'ec4dd5952c1f68e4520299bd522c96a3.jpeg', '2021-06-21 07:50:22', 'Primeiro Boss'),
+(23, 'Odio voluptas qui et quis vel aliqua Veritatis mollitia ipsa aut consequuntur adipisci nostrud minima qui aliquid', 'Quia ullam quibusdam', 'e92b1a4461d5504d9f3fda84c508a20a.', '2021-06-21 07:51:47', 'Caverna Secreta'),
+(24, 'Dolor cumque exercitation dicta officia est nesciunt sed magna quas enim minim consequatur Incidunt vitae cupiditate quibusdam', 'Emanoel Silva', 'a30843b5c709a4325103374c8856cc70.jpg', '2021-06-21 08:59:54', 'Armamento'),
+(25, 'Consectetur repellendus Iusto totam quae nisi necessitatibus sint id minima eu quasi repudiandae a eu dolore rerum libero aperiam', 'Emanoel Silva', 'a30843b5c709a4325103374c8856cc70.jpg', '2021-06-21 09:28:00', 'Bosses');
 
 -- --------------------------------------------------------
 
@@ -96,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `senha_usuario` varchar(50) NOT NULL,
   `imagem_usuario` varchar(40) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -106,7 +126,10 @@ INSERT INTO `usuarios` (`id_usuario`, `nome_usuario`, `email_usuario`, `dt_nasci
 (1, 'TenZ', 'tenz@gmail.com', '2012-12-12', 'tenz123', 'ec4dd5952c1f68e4520299bd522c96a3.jpeg'),
 (2, 'FNX', 'fnx@gmail.com', '2012-12-12', 'fnx123', '36dbdc35d5b8cd60868902d5d2154f0b.jpg'),
 (3, 'G-Wolf Gaming', 'gwolfgaming@gmail.com', '2012-12-12', 'gwolfgaming123', 'e65ce8c3e428ef0bb6f9f2cb8fb6cfe8.png'),
-(4, 'Scream', 'scream@gmail.com', '2012-12-12', 'scream123', 'e7e30c19e2fa161384329e6ce6996b0f.jpg');
+(4, 'Scream', 'scream@gmail.com', '2012-12-12', 'scream123', 'e7e30c19e2fa161384329e6ce6996b0f.jpg'),
+(5, 'Emanoel Silva', 'emanoelsilva@gmail.com', '1987-12-05', 'emanoel123', 'a30843b5c709a4325103374c8856cc70.jpg'),
+(6, 'É flacido', 'flacido@gmail.com', '2012-12-22', 'flacido123', '845704a0208c1af315d57b71e8ded8b3.jpg'),
+(7, 'Quia ullam quibusdam', 'zoxok@mailinator.com', '1984-11-10', 'teste', 'e92b1a4461d5504d9f3fda84c508a20a.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

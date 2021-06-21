@@ -3,6 +3,8 @@
 include_once('./php/verificaLogin.php');
 // Inclui a página de contagem para as estatísticas
 include_once("./php/contagem.php");
+// Converte a data de nascimento do usuário para o nosso padrão
+include_once("./php/converte_data.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -106,7 +108,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_pb['autor_msg']; ?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_pb['data_msg'];?>
+                                        <?php $data_pb = $last_pb['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_pb)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -132,7 +134,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_sb['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_sb['data_msg'];?>
+                                        <?php $data_sb = $last_sb['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_sb)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -158,7 +160,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_tb['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_tb['data_msg'];?>
+                                        <?php $data_tb = $last_tb['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_tb)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -197,7 +199,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_cs['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_cs['data_msg'];?>
+                                        <?php $data_cs = $last_cs['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_cs)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -223,7 +225,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_md['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_md['data_msg'];?>
+                                        <?php $data_md = $last_md['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_md)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -249,7 +251,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_zd['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_zd['data_msg'];?>
+                                        <?php $data_zd = $last_zd['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_zd)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -288,7 +290,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_g['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_g['data_msg'];?>
+                                        <?php $data_g = $last_g['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_g)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -314,7 +316,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_a['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_a['data_msg'];?>
+                                        <?php $data_a = $last_a['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_a)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -340,7 +342,7 @@ include_once("./php/contagem.php");
                                         Por: <b><?php echo $last_b['autor_msg'];?></b>
                                     </div> 
                                     <div>
-                                        <?php echo $last_b['data_msg'];?>
+                                        <?php $data_b = $last_b['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_b)); ?>
                                     </div>
                                 </td>
                             </tr>
@@ -359,7 +361,7 @@ include_once("./php/contagem.php");
                                     <div class="card-body">
                                         <h4 class="card-title"><b><?php echo $_SESSION['usuarioNome']; ?></b></h4>
                                         <h6 class="card-subtitle mb-2 text-muted"><?php echo $_SESSION['usuarioEmail']; ?></h5>
-                                        <p class="card-text text-dark"><?php echo $_SESSION['usuarioDtNasc']; ?></p>
+                                        <p class="card-text text-dark"><?php echo $dataconvertida; ?></p>
                                     </div>
                                 </div>
                             </div>

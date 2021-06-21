@@ -5,6 +5,8 @@ include_once('../php/verificaLoginTopicos.php');
 $_SESSION['url_pag'] = $_SERVER['REQUEST_URI'];
 // Conecta com o banco de dados
 include_once("../php/conexao.php");
+// Converte a data de nascimento do usuário para o nosso padrão
+include_once("../php/converte_data.php");
 // Conta quantas mensagens tem este tópico
 $contar_msg = "SELECT * FROM mensagens_topico WHERE topico_msg = 'Munição Dourada'";
 $resultado_contar_msg = mysqli_query($connect, $contar_msg);
@@ -128,7 +130,7 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
                                     <?php echo $row_msg['conteudo_msg']; ?>
                                 </td>
                                 <td>
-                                    <div><?php echo $row_msg['data_msg']; ?></div>
+                                    <div><?php $data_msg = $row_msg['data_msg']; echo date('d/m/Y H:i:s', strtotime($data_msg)); ?></div>
                                 </td>
                             </tr>
                             <?php
@@ -190,7 +192,7 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
                                     <div class="card-body">
                                         <h4 class="card-title"><b><?php echo $_SESSION['usuarioNome']; ?></b></h4>
                                         <h6 class="card-subtitle mb-2 text-muted"><?php echo $_SESSION['usuarioEmail']; ?></h5>
-                                        <p class="card-text text-dark"><?php echo $_SESSION['usuarioDtNasc']; ?></p>
+                                        <p class="card-text text-dark"><?php echo $dataconvertida; ?></p>
                                     </div>
                                 </div>
                             </div>

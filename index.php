@@ -138,7 +138,7 @@ session_start();
                 <div class="row">
                     <div class="col-12 text-center">
                         <h1 class="display-4">Death Wisdom</h1>
-                        <p class="lead">Death Wisdom é um jogo eletrônico 2D de ação-suspense desenvolvido pela G-Wolf Gaming. É o primeiro jogo da empresa e sua Demo foi lançada em 15 de junho de 2021 para Windows e Linux.</p>
+                        <p class="lead">Death Wisdom é um jogo eletrônico 2D de ação-suspense desenvolvido pela G-Wolf Gaming. É o primeiro jogo da empresa e sua Demo foi lançada em 22 de junho de 2021 para Windows e Linux.</p>
                         <hr>
                     </div>
                 </div>

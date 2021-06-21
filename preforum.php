@@ -131,7 +131,7 @@ session_start();
                                 </div>
                                 <div class="form-group col-12 col-lg-8">
                                     <label class="h5" for="imgPerfil">Foto de Perfil</label>
-                                    <input type="file" accept="image/png, image/jpeg, image/jpg" class="form-control" name="imgPerfil" id="imgPerfil">
+                                    <input type="file" accept="image/png, image/jpeg, image/jpg" class="form-control" name="imgPerfil" id="imgPerfil" required>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-success mt-3">Cadastrar-se</button>
