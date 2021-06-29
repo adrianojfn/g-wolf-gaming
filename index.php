@@ -7,6 +7,8 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <!-- Fonte de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -74,7 +76,7 @@ session_start();
                 <div class="carousel-item">
                     <img class="img-fluid d-block" src="./assets/banner-dw-3.png" alt="Demo Disponível">
                     <div class="carousel-caption d-none d-md-block">
-                        <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
+                        <a href="./jogos/Death Wisdom.zip" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -164,11 +166,11 @@ session_start();
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="embed-responsive embed-responsive-16by9 mb-4">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W2Wnvvj33Wo"></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0U-_2EsV6og"></iframe>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <p class="font-size-maior text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis tempore illo beatae labore itaque deleniti, facilis modi temporibus eius ipsam corporis repellendus assumenda omnis qui natus dignissimos aut consequatur! Hic?</p>
+                                        <p class="font-size-maior text-center">Um pouco da gameplay da Demo de Death Wisdom. Demonstração de início, cenários, armas, inimigos, fases e bosses.</p>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +179,7 @@ session_start();
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <p class="font-size-maior">Jogo voltado ao retrô e com aspectos de um topdown, nele o jogador é introduzido a um universo apocalíptico, perdido e sem saber onde ou porque está ali, ele explora o ambiente procurando uma saída, ao decorrer da gameplay se encontra com diversos inimigos e chefões a serem combatidos.</p>
-                                        <a href="#" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
+                                        <a href="./jogos/Death Wisdom.zip" class="btn btn-outline-success"><i class="fas fa-download mr-2"></i>Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +208,7 @@ session_start();
             <!-- Form recebendo nome e e-mail do usuário -->
             <div class="row justify-content-center mb-5">
                 <div class="col-sm-12 col-md-10 col-lg-8">
-                    <form action="./php/form_email_mkt" method="POST" enctype="multipart/form-data">
+                    <form action="./php/form_email_mkt.php" method="POST" enctype="multipart/form-data">
                         <div class="form-row">
                             <div class="form-group col-sm-6">
                                 <label for="inputName">Nome</label>

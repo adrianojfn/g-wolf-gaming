@@ -7,6 +7,8 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <!-- Fonte de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -69,7 +71,7 @@ session_start();
                     <!-- Formulário de contato sobre assuntos específicos -->
                     <div class="col-12 col-lg-8 col-xl-8 mb-5">
                         <h4 class="text-center">Formulário de Contato</h4>
-                        <form action="./php/form_contato" method="POST" enctype="multipart/form-data">
+                        <form action="./php/form_contato.php" method="POST" enctype="multipart/form-data">
                             <div class="form-row mt-4 border pt-2">
                                 <!-- Mensagem de sucesso/erro para o contato -->
                                 <?php

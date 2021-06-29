@@ -21,6 +21,8 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <!-- Fonte de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -272,6 +274,9 @@ $total_usuarios = mysqli_num_rows($resultado_contar_usuarios);
                             <label class="h5" for="mensagemTopico">Mensagem:</label>
                             <textarea class="form-control" name="mensagemTopico" id="mensagemTopico" rows="3" maxlength="1000" placeholder="Sua mensagem com no máximo 3000 caracteres" required></textarea>
                         </div>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        Cuidado, todo e quaisquer posts/conteúdo publicado aqui é de total responsabilidade do usuário. A G-Wolf Gaming não tem envolvimento algum com qualquer ato fora da lei.
                     </div>
                     <button type="submit" class="btn btn-primary">Criar</button>
                 </form>

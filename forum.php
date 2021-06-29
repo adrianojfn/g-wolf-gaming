@@ -11,6 +11,8 @@ include_once("./php/converte_data.php");
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <!-- Fonte de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
